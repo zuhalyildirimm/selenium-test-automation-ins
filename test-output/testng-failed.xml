@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite thread-count="1" parallel="tests" name="Failed suite [Test Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="recordHarFlag" value="1"/>
+  <parameter name="isLegacyHarEnabled" value="false"/>
+  <listeners>
+    <listener class-name="listeners.TestListener"/>
+    <listener class-name="org.testng.reporters.EmailableReporter2"/>
+  </listeners>
+  <test thread-count="1" parallel="tests" name="LeverApplicationPage Test(failed)">
+    <parameter name="baseURL" value="https://useinsider.com/careers/quality-assurance/"/>
+    <classes>
+      <class name="tests.LeverApplicationTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="verifyLeverApplicationRedirect"/>
+          <include name="startDriver"/>
+          <include name="setup"/>
+        </methods>
+      </class> <!-- tests.LeverApplicationTest -->
+    </classes>
+  </test> <!-- LeverApplicationPage Test(failed) -->
+</suite> <!-- Failed suite [Test Suite] -->

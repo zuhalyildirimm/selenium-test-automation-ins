@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+
+
+ 
+<suite name="Test Suite" parallel="tests" thread-count="1"
+	preserve-order="true">
+	
+	<parameter name="recordHarFlag" value="1"/>
+        <parameter name="isLegacyHarEnabled" value="false"/>
+	
+	
+	<listeners>
+
+        <listener class-name="listeners.TestListener"/>
+        <listener class-name="org.testng.reporters.EmailableReporter2"/>
+    </listeners>
+    
+	
+<!--    <test name="HomePage Test">-->
+<!--        <parameter name="baseURL" value="https://useinsider.com/"/>-->
+<!--        <classes>-->
+<!--            <class name="tests.HomePageTest"/>-->
+<!--        </classes>-->
+<!--    </test>-->
+    
+    
+<!--    <test name="CareersPages Test">-->
+<!--    <parameter name="baseURL" value="https://useinsider.com/"/>-->
+<!--    <classes>-->
+<!--        <class name="tests.CareersPageTest">-->
+<!--           		 <methods>-->
+<!--                <include name="verifyCareersPageIsOpened" />-->
+<!--				<include name="verifyCareerPageBlocks" />-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--</test>-->
+    
+    
+
+<!--  <test name="JobFilteringPage Test">-->
+<!--    <parameter name="baseURL" value="https://useinsider.com/careers/quality-assurance/"/>-->
+<!--    <classes>-->
+<!--        <class name="tests.JobFilteringTest">-->
+<!--            <methods>-->
+<!--                <include name="verifyQAJobsFilter" />-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--</test>-->
+    
+   
+
+<test name="LeverApplicationPage Test">
+    <parameter name="baseURL" value="https://useinsider.com/careers/quality-assurance/"/>
+    <classes>
+        <class name="tests.LeverApplicationTest">
+            <methods>
+                <include name="verifyLeverApplicationRedirect" />
+            </methods>
+        </class>
+    </classes>
+</test>
+
+
+<!--<test name="JobDetailsPage Test">-->
+<!--    <parameter name="baseURL" value="https://useinsider.com/careers/quality-assurance/"/>-->
+<!--    <classes>-->
+<!--        <class name="tests.JobDetailsTest">-->
+<!--            <methods>-->
+<!--                <include name="verifyJobDetailsPage" />-->
+<!--            </methods>-->
+<!--        </class>-->
+<!--    </classes>-->
+<!--</test>-->
+    
+    
+   
+    
+</suite>
+ 

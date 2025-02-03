@@ -1,0 +1,79 @@
+Test Case 1: Verify Company Homepage is Opened
+Action: Navigate to the URL https://useinsider.com/.
+Expected Result: The Insider homepage loads without any errors.
+
+Action: Verify that the homepage loads completely.
+Expected Result: The page is fully rendered with all elements visible.
+
+Action: Check that the Insider logo is visible.
+Expected Result: The Insider logo appears clearly at the top of the page.
+
+Action: Ensure the navigation bar is displayed with all menu options.
+Expected Result: The navigation bar contains all expected menu options and is accessible.
+
+Test Case 2: Verify "Careers" Page and Sections
+Action: Click on the “Company” menu in the navigation bar.
+Expected Result: The dropdown menu expands and displays all options.
+
+Action: Select the “Careers” option from the dropdown.
+Expected Result: The "Careers" page opens without errors.
+
+Action: Verify that the "Careers" page loads completely.
+Expected Result: The page is fully rendered, and all elements are visible.
+
+Action: Check that the "Locations" section is displayed.
+Expected Result: The "Locations" section is present and accessible.
+
+Action: Check that the "Teams" section is displayed.
+Expected Result: The "Teams" section is present and accessible.
+
+Action: Check that the "Life at Insider" section is displayed.
+Expected Result: The "Life at Insider" section is present and accessible.
+
+Test Case 3: Filter and Verify QA Jobs in Istanbul, Turkey
+Action: Navigate to the URL https://useinsider.com/careers/quality-assurance/.
+Expected Result: The "Quality Assurance" careers page loads without any errors.
+
+Action: Click on the “See all QA jobs” button.
+Expected Result: The job listing page opens, displaying all QA job postings.
+
+Action: Select “Istanbul, Turkey” from the "Location" filter.
+Expected Result: The job list updates, showing only jobs in "Istanbul, Turkey".
+
+Action: Select “Quality Assurance” from the "Department" filter.
+Expected Result: The job list updates, displaying only "Quality Assurance" department jobs.
+
+Action: Verify that the job list updates according to the applied filters.
+Expected Result: The list contains only jobs that match the selected criteria.
+
+Test Case 4: Verify Job Position, Department, and Location
+Action: For each job in the filtered list, check the "Position" title.
+Expected Result: The job title contains "Quality Assurance".
+
+Action: Verify that the job position contains "Quality Assurance".
+Expected Result: The job title explicitly includes "Quality Assurance".
+
+Action: Check the "Department" field for each job.
+Expected Result: The department is listed as "Quality Assurance".
+
+Action: Verify that the department is listed as "Quality Assurance".
+Expected Result: The department field matches the expected value.
+
+Action: Check the "Location" field for each job.
+Expected Result: The location is specified as "Istanbul, Turkey".
+
+Action: Verify that the location is listed as "Istanbul, Turkey".
+Expected Result: The job listing correctly reflects the selected location.
+
+Test Case 5: Verify Redirection to Lever Application Form
+Action: Click on the "View Role" button for any job listing on the Careers page.
+Expected Result: Clicking the button triggers a page redirection.
+
+Action: Verify that the click action triggers a page redirection.
+Expected Result: The browser navigates to the Lever application form page.
+
+Action: Ensure that the redirected page is the Lever application form.
+Expected Result: The Lever application page loads without errors.
+
+Action: Check that the job title, location, and department are displayed correctly on the application page.
+Expected Result: The job title, location, and department details match the selected job.
