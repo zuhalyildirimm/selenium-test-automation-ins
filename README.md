@@ -24,7 +24,7 @@ TestNG Reports generated for structured execution logs.
 CDP (Chrome DevTools Protocol) Integration
 Captures HAR (HTTP Archive) network traffic logs for each test case.
 Filters response payloads, previews, and request details.
-Saves HAR logs as compressed ZIP files under omni/test-output/har-archives.
+Saves HAR logs as compressed ZIP files under har-archives.
 HAR data is structured in XML format with only relevant details.
  
  
